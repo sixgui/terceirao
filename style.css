@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul claro suave */
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white; /* Título branco */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00509e; /* Azul intermediário */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #003366; /* Azul escuro no hover */
+    transition: background-color 0.3s;
+}
+
+main {
+    padding: 20px;
+    background-color: white; /* Fundo branco nas seções principais */
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    position: relative; /* Ajustado para que não fique fixo na tela */
+    bottom: 0;
+}
+
+h1, h2 {
+    color: #003366; /* Azul escuro para os títulos */
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    background-color: #e6f2ff; /* Fundo azul claro nas seções */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Itens do menu em coluna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Margem em cima e embaixo dos itens do menu */
+    }
+
+    main {
+        width: 95%; /* Aumenta a largura do main para ocupar mais espaço em telas menores */
+        margin: 10px auto; /* Margem reduzida */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Tamanho do título ajustado */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Tamanho dos subtítulos ajustado */
+    }
+
+    p {
+        font-size: 0.9em; /* Tamanho do texto ajustado */
+    }
+}
